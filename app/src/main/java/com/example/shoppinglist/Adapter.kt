@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.shoppinglist.DatabaseReader.FeedReaderContract.FeedEntry.TABLE_NAME
 
 /** Adapter that maps two String Pairs representing the name and price of an item to a UI element */
-class Adapter(private val data: MutableList<Pair<String, String>>, private val dbHandler: DatabaseHandler) : RecyclerView.Adapter<Adapter.ViewHolder>() {
+class Adapter(private val data: MutableList<Pair<String, Double>>, private val dbHandler: DatabaseHandler) : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
 
     /** A ViewHolder that keeps track of the UI elements within the layout*/

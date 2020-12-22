@@ -12,7 +12,7 @@ class DatabaseReader(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         "CREATE TABLE ${FeedReaderContract.FeedEntry.TABLE_NAME} (" +
                 "${BaseColumns._ID} INTEGER PRIMARY KEY," +
                 "${FeedReaderContract.FeedEntry.NAME} TEXT," +
-                "${FeedReaderContract.FeedEntry.PRICE} TEXT)"
+                "${FeedReaderContract.FeedEntry.PRICE} REAL)"
 
     private val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS ${FeedReaderContract.FeedEntry.TABLE_NAME}"
 
